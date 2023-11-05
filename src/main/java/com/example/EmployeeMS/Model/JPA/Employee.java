@@ -1,6 +1,6 @@
 package com.example.EmployeeMS.Model.JPA;
 
-import com.example.EmployeeMS.Model.Mongo.Department;
+
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -10,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.util.Date;
 
 @Entity
+@Table(name = "employee")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -25,8 +26,8 @@ public class Employee {
 
     String lastName;
 
-    int mobileNo;
 
+    @Column(unique = true,nullable = false)
     String email;
 
     @CreationTimestamp

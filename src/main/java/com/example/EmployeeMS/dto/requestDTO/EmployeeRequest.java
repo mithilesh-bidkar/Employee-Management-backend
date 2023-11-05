@@ -15,8 +15,6 @@ public class EmployeeRequest {
 
     String lastName;
 
-    int mobileNo;
-
     String email;
 
     String departmentName;

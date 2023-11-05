@@ -20,7 +20,7 @@ public class EmployeeResponse {
 
     String lastName;
 
-    int mobileNo;
+
 
     String email;
 
